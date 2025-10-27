@@ -30,13 +30,13 @@ func main() {
 	defer sc.Close()
 
 	order := Order{
-		ID:           "ORD-123",
-		CustomerName: "Иван Петров",
+		ID:           "ORD-555",
+		CustomerName: "Владимир Панфилов",
 		Items: []OrderItem{
-			{Name: "Ноутбук", Price: 999.99, Count: 1},
-			{Name: "Мышь", Price: 19.99, Count: 2},
+			{Name: "Ноутбук", Price: 1000, Count: 1},
+			{Name: "Мышь", Price: 100, Count: 2},
 		},
-		Total: 1039.97,
+		Total: 1200,
 	}
 
 	data, _ := json.Marshal(order)
@@ -44,7 +44,7 @@ func main() {
 	if err != nil {
 		log.Fatal("Ошибка публикации:", err)
 	}
-	log.Println("Опубликован заказ ORD-123")
+	log.Println("Заказ опубликован")
 
 	time.Sleep(1 * time.Second)
 }
