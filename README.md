@@ -5,9 +5,9 @@
 
 Для создания и публикации заказа:
   1. В PowerShell: nats-streaming-server
-  2. Открыть \order-service\publisher\publisher.go
+  2. Открыть файл \order-service\publisher\publisher.go
   3. Изменить данные заказа в строке order :
-  4. Открыть \order-service\publisher\ в PowerShell
+  4. Открыть в PowerShell \order-service\publisher
   5. go run publisher.go
 
 Для запуска сервиса:
