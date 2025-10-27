@@ -31,7 +31,7 @@ func main() {
 
 	order := Order{
 		ID:           "ORD-555",
-		CustomerName: "Владимир Панфилов",
+		CustomerName: "Виктория Неустроева",
 		Items: []OrderItem{
 			{Name: "Ноутбук", Price: 1000, Count: 1},
 			{Name: "Мышь", Price: 100, Count: 2},
@@ -47,4 +47,5 @@ func main() {
 	log.Println("Заказ опубликован")
 
 	time.Sleep(1 * time.Second)
+
 }
