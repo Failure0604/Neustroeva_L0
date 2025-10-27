@@ -11,5 +11,5 @@
 
 Для запуска, в PowerShell:
   1. nats-streaming-server
-  2. Открыть проект
+  2. Открыть \order-service
   3. go run .
